@@ -1,0 +1,995 @@
+@import url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1800&q=80');
+
+
+:root {
+
+    --primary: #c45135;
+
+    --primary-dark: #963a26;
+
+    --primary-light: #f8f5ef;
+
+    --accent: #b5462e;
+
+    --border: #eee7dc;
+
+    --muted: #777;
+
+    --dark: #2e2923;
+
+    --bg: #f8f5ef;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: var(--bg);
+
+    color: #29251f;
+
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+header {
+
+    width: 100%;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee7dc;
+
+}
+
+
+.navbar {
+    min-height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 165px;
+    height: auto;
+    display: block;
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #403b34;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: .3s;
+}
+
+
+
+
+
+/* ================================
+   HERO
+================================ */
+.hero {
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(25, 20, 15, 0.75),
+            rgba(25, 20, 15, 0.20)),
+        url("../img/inicial.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content {
+
+    color: white;
+
+}
+
+
+.tag,
+
+.page-header span,
+
+.section-title span,
+
+.small-title {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: var(--primary-light);
+
+}
+
+
+.display-title {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    line-height: .95;
+
+}
+
+
+.display-title span {
+
+    color: var(--primary-light);
+
+}
+
+
+.hero p {
+
+    max-width: 500px;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.btn-latinidade {
+
+    display: inline-block;
+
+    background: var(--primary);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+
+.btn-latinidade:hover {
+
+    background: var(--primary-dark);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ================================
+   TÍTULOS
+================================ */
+
+.section-title h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+
+
+
+}
+
+
+.intro-text {
+
+    max-width: 750px;
+
+    line-height: 1.8;
+
+    color: #6d665d;
+
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.info-card,
+
+.country-card,
+
+.tourism-card,
+
+.food-card,
+
+.culture-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    transition: .3s;
+
+}
+
+
+.info-card:hover,
+
+.country-card:hover,
+
+.tourism-card:hover,
+
+.food-card:hover,
+
+.culture-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+}
+
+
+.card-icon {
+
+    font-size: 40px;
+
+}
+
+
+.info-card p,
+
+.country-card p,
+
+.tourism-content p,
+
+.food-card p,
+
+.culture-card p {
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+}
+
+
+.info-card a {
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+}
+
+
+/* ================================
+   QUOTE
+================================ */
+
+.quote-section {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+
+.quote-section span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+}
+
+
+.quote-section h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 38px;
+
+    max-width: 700px;
+
+}
+
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.page-header {
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.page-header h1 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 55px;
+
+}
+
+
+.page-header p {
+
+    color: #d8d1c7;
+
+    max-width: 650px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ================================
+   PAÍSES
+================================ */
+
+.flag {
+
+    font-size: 45px;
+
+}
+
+
+.country-card p {
+
+    min-height: 90px;
+
+}
+
+
+.btn-card {
+
+    border: none;
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 11px 18px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    border-radius: 3px;
+
+    transition: .3s;
+
+
+}
+
+
+.btn-card:hover {
+
+    background: var(--primary-dark);
+
+}
+
+
+/* ================================
+   TURISMO
+================================ */
+
+.tourism-card {
+    overflow: hidden;
+}
+
+
+.tourism-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    background-size: cover;
+}
+
+
+.tourism-image.brasil {
+    background: linear-gradient(135deg, #69a86b, #e7c84c);
+}
+
+
+.tourism-image.peru {
+    background: linear-gradient(135deg, #8f6d50, #d8b687);
+}
+
+
+.tourism-image.chile {
+    background: linear-gradient(135deg, #d5a65e, #e8d8a9);
+}
+
+
+.tourism-image.argentina {
+    background: linear-gradient(135deg, #77a6c9, #d8e6ec);
+}
+
+
+.tourism-image.colombia {
+    background: linear-gradient(135deg, #d9a84b, #6f9c6a);
+}
+
+
+.tourism-image.bolivia {
+    background: linear-gradient(135deg, #ddd5b8, #9e9b86);
+}
+
+
+.tourism-image.equador {
+    background: linear-gradient(135deg, #d9b84c, #6f9c6a);
+}
+
+
+.tourism-image.guiana {
+    background: linear-gradient(135deg, #6f9c6a, #d8b84c);
+}
+
+
+.tourism-image.paraguai {
+    background: linear-gradient(135deg, #d8a6a6, #e8d8d8);
+}
+
+
+.tourism-image.suriname {
+    background: linear-gradient(135deg, #6f9c6a, #d8c45c);
+}
+
+
+.tourism-image.uruguai {
+    background: linear-gradient(135deg, #8bb5d1, #e8e8df);
+}
+
+
+.tourism-image.venezuela {
+    background: linear-gradient(135deg, #d9b84c, #8c9fbd);
+}
+
+
+.tourism-content span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+.tourism-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+}
+
+
+
+/* ================================
+   GASTRONOMIA
+================================ */
+
+.food-icon {
+
+    font-size: 55px;
+
+}
+
+
+.food-card h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 29px;
+
+}
+
+
+.food-card span {
+
+    display: block;
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* ================================
+   CULTURA
+================================ */
+
+.culture-icon {
+
+    font-size: 45px;
+
+}
+
+
+.culture-card h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 28px;
+
+}
+
+
+.culture-highlight {
+
+    background:
+
+        linear-gradient(rgba(30, 25, 20, .82),
+
+            rgba(30, 25, 20, .82)),
+
+        url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.culture-highlight h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 55px;
+
+}
+
+
+.culture-highlight p {
+
+    max-width: 600px;
+
+    color: #ddd;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================
+   SOBRE
+================================ */
+
+.about-text h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+
+}
+
+
+.about-text p {
+
+    color: #6d665d;
+
+    line-height: 1.8;
+
+}
+
+
+.about-box {
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+.about-box h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 27px;
+
+}
+
+
+.tech {
+
+    border-top: 1px solid #514a41;
+
+}
+
+
+.tech strong {
+
+    display: block;
+
+    color: var(--primary-light);
+
+}
+
+
+.tech span {
+
+    color: #ccc;
+
+    font-size: 13px;
+
+}
+
+
+.objective-title {
+
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    background: #211e1a;
+
+    color: white;
+
+}
+
+
+footer h2 {
+
+    letter-spacing: 3px;
+
+}
+
+
+footer p {
+
+    color: #aaa;
+
+    font-size: 13px;
+
+}
+
+
+.footer-links a {
+
+    color: #ddd;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--primary-light);
+
+}
+
+
+.copyright {
+
+    border-top: 1px solid #39342e;
+
+    color: #777;
+
+    font-size: 11px;
+
+}
+
+
+/* ================================
+   CELULAR
+================================ */
+
+@media (max-width: 767.98px) {
+
+
+    .navbar {
+
+        min-height: 75px;
+
+    }
+
+
+    .logo img {
+
+        width: 140px;
+
+    }
+
+
+    @media (max-width: 767.98px) {
+
+        .hero {
+            min-height: 650px;
+            background-position: center center;
+        }
+
+        .display-title {
+            font-size: 55px;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+    }
+
+    .display-title {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .page-header h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .culture-highlight h2 {
+
+        font-size: 40px;
+
+    }
+
+}
+
+/* ========================================
+   MODAL CULTURA
+======================================== */
+
+.culture-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Imagem grande do topo do modal */
+
+.culture-modal-hero {
+    height: 240px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    border-radius: 8px 8px 0 0;
+
+    overflow: hidden;
+}
+
+
+/* camada escura sobre a foto */
+
+.culture-modal-hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(to top,
+            rgba(30, 25, 20, 0.9),
+            rgba(30, 25, 20, 0.15));
+}
+
+
+/* textos que ficam sobre a foto */
+
+.culture-modal-hero-content {
+    position: absolute;
+
+    left: 30px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+.culture-modal-hero-content .flag {
+    font-size: 36px;
+}
+
+
+.culture-modal-hero-content h2 {
+    margin: 5px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+}
+
+
+.culture-modal-hero-content p {
+    margin: 0;
+
+    opacity: 0.9;
+
+    font-size: 14px;
+}
+
+
+/* botão X */
+
+.culture-modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 3;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+
+    padding: 9px;
+}
+
+
+/* informações */
+
+.culture-info {
+    border-left: 3px solid #b5462e;
+
+    padding-left: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.culture-info strong {
+    display: block;
+
+    color: #b5462e;
+
+    margin-bottom: 5px;
+}
+
+
+/* celular */
+
+@media (max-width: 576px) {
+
+    .culture-modal-hero {
+        height: 200px;
+    }
+
+    .culture-modal-hero-content {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .culture-modal-hero-content h2 {
+        font-size: 27px;
+    }
+
+}
+
+/* CORREÇÃO MENU MOBILE */
+@media (max-width: 991.98px) {
+
+    header,
+    .navbar {
+        position: relative !important;
+        z-index: 9999 !important;
+        background: #fff !important;
+    }
+
+    .navbar-collapse {
+        position: absolute !important;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff !important;
+        padding: 10px 20px 20px;
+        z-index: 9999 !important;
+    }
+
+    .navbar-nav {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        margin: 0 !important;
+        padding: 12px !important;
+        color: #403b34 !important;
+    }
+}

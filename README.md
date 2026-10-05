@@ -1,16 +1,84 @@
-# React + Vite
+# Latinidade — Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Projeto desenvolvido para o trabalho final da disciplina de Front-End.
 
-Currently, two official plugins are available:
+O projeto apresenta uma Landing Page sobre a diversidade, cultura, turismo e identidade da América do Sul, reunindo diferentes destinos turísticos em uma única página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias utilizadas
 
-## React Compiler
+- React
+- Vite
+- JavaScript
+- Bootstrap 5
+- HTML
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the Oxlint configuration
+- Navbar com navegação entre as seções da página
+- Seção Hero de apresentação
+- Seção de destaques sobre a América do Sul
+- Seção de destinos turísticos
+- Cards de destinos gerados dinamicamente utilizando `map()`
+- Call to Action (CTA)
+- Footer
+- Layout responsivo para dispositivos móveis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Estrutura do projeto
+
+```text
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── FooterTemp.jsx
+│
+├── sections/
+│   ├── Hero.jsx
+│   ├── Destaques.jsx
+│   ├── Turismo.jsx
+│   └── CTA.jsx
+│
+├── App.jsx
+└── index.css
+```
+
+## Como executar o projeto
+
+### 1. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 2. Executar o projeto
+
+```bash
+npm run dev
+```
+
+Depois, acesse o endereço informado pelo Vite no navegador.
+
+## Landing Page
+
+O projeto foi desenvolvido como uma Landing Page única, reunindo as principais informações do site em diferentes seções:
+
+- Início
+- Destaques
+- Turismo
+- CTA
+- Footer
+
+## Responsividade
+
+A página foi desenvolvida para se adaptar a diferentes tamanhos de tela, incluindo computadores, tablets e dispositivos móveis.
+
+## Publicação
+
+O projeto será publicado utilizando a plataforma Netlify.
+
+## Link do site:  
+https://latinidade-thiago.netlify.app/
+
+## Autoria
+
+Projeto desenvolvido para a disciplina de Front-End — 2026.

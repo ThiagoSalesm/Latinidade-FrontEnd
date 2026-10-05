@@ -28,8 +28,8 @@ body {
 
 header {
     width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee7dc;
+    background: var(--primary);
+    
 }
 
 .navbar {
@@ -60,11 +60,15 @@ header {
 }
 
 .navbar-nav .nav-link {
-    color: #403b34;
+    color: white;
     font-size: 14px;
     font-weight: 600;
     margin-left: 15px;
     transition: .3s;
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
 }
 
 
@@ -370,7 +374,7 @@ footer p {
     .navbar {
         position: relative !important;
         z-index: 9999 !important;
-        background: #fff !important;
+        background: var(--primary) !important;
     }
 
     .navbar-collapse {
@@ -378,7 +382,7 @@ footer p {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #fff !important;
+        background: var(--primary) !important;
         padding: 10px 20px 20px;
         z-index: 9999 !important;
     }
@@ -396,6 +400,6 @@ footer p {
         display: block;
         margin: 0 !important;
         padding: 12px !important;
-        color: #403b34 !important;
+        color: white !important;
     }
  }

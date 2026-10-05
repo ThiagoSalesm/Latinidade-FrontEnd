@@ -3,7 +3,7 @@ import Hero from "./sections/Hero";
 import Destaques from "./sections/Destaques";
 import Turismo from "./sections/Turismo";
 import CTA from "./sections/CTA";
-
+import Footer from "./components/FooterTemp";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Destaques />
       <Turismo />
       <CTA />
+      <Footer />
     </>
 
 
